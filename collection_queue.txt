@@ -1,0 +1,22 @@
+//Queue
+using System;
+using System.Collections;					
+public class Program
+{
+	public static void Main()
+	{
+		//Queue
+		Queue queue=new Queue();
+		queue.Enqueue("c#");
+		queue.Enqueue("php");
+		queue.Enqueue("c++");
+		
+		  foreach (var item in queue)  
+        {  
+            Console.WriteLine(item); 
+		     
+        }  
+		Console.WriteLine("Dequeue: "+ queue.Dequeue()); 
+		Console.WriteLine(queue.Peek());
+	}
+}

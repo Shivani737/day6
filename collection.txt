@@ -1,0 +1,59 @@
+//Collection
+using System;
+using System.Collections;					
+public class Program
+{
+	public static void Main()
+	{
+		//array_list
+		ArrayList arrayList=new ArrayList();
+		arrayList.Add("shivani");
+		arrayList.Add("abc");
+		arrayList.Add(1);
+		arrayList.Remove(1);
+		for(int i=0; i<arrayList.Count; i++)
+		{
+			Console.WriteLine(arrayList[i]);
+		}
+		//hashtable
+		Hashtable hashtable=new Hashtable();
+		hashtable.Add(101,"shivani");
+		hashtable.Add(102,"sh");
+		hashtable.Add(103,"abc");
+		ICollection keys=hashtable.Keys;
+		foreach(var item in keys)
+		{
+			Console.WriteLine(item+":-" +hashtable[item]);
+		}
+		//Queue
+		Queue queue=new Queue();
+		queue.Enqueue("c#");
+		queue.Enqueue("php");
+		queue.Enqueue("c++");
+		//queue.Dequeue();
+		Console.WriteLine(queue.Peek());
+		
+		//stack
+		Stack stack= new Stack();
+		stack.Push("abc");
+		stack.Push("adfdf");
+		stack.Push("oooo");
+		stack.Pop();
+		Console.ReadLine();
+		//Queue
+		Queue queue=new Queue();
+		queue.Enqueue("c#");
+		queue.Enqueue("php");
+		queue.Enqueue("c++");
+		//queue.Dequeue();
+		Console.WriteLine(queue.Peek());
+		
+		//stack
+		Stack stack= new Stack();
+		stack.Push("abc");
+		stack.Push("adfdf");
+		stack.Push("oooo");
+		stack.Pop();
+		Console.ReadLine();
+	}
+}

@@ -1,0 +1,26 @@
+//stack
+using System;
+using System.Collections;					
+public class Program
+{
+	public static void Main()
+	{
+		
+		//stack
+		Stack stack= new Stack();
+		stack.Push("shivani");
+		stack.Push("rutuja");
+		stack.Push("palak");
+		
+		
+		  foreach (var item in stack)  
+        {  
+            Console.WriteLine(item); 
+		     
+        }  
+		
+		  Console.WriteLine("Peek element: "+stack.Peek());  
+        Console.WriteLine("Pop: "+ stack.Pop());  
+        Console.WriteLine("After Pop, Peek element: " + stack.Peek());  
+	}
+}
