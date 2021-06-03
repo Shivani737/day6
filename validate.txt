@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x=1;
+		Loop:
+		x++;
+		if(x<20)
+		{
+			Console.WriteLine(x);
+			goto Loop;
+		}
+		Console.ReadLine();
+	}
+}
