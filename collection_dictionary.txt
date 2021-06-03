@@ -1,0 +1,28 @@
+//dictionary
+using System;
+using System.Collections.Generic;					
+public class Program
+{
+	public static void Main()
+	{
+		//System collections
+		System.Collections.Stack stack1=new System.Collections.Stack();
+		stack1.Push(1);
+		int x1=(int)stack1.Pop();
+		
+		//System.Collection.Generic
+		Stack<int> stack=new Stack<int>();
+		stack.Push(1);
+		int x=stack.Pop();
+		
+		Dictionary<int, string> keyValuesPairs = new Dictionary<int, string>();
+		keyValuesPairs.Add(1, "shivani");
+		keyValuesPairs.Add(2, "palak");
+		keyValuesPairs.Add(3, "parth");
+		
+		foreach(var item in keyValuesPairs)
+		{
+			Console.WriteLine(item.Key+" "+item.Value);
+		}
+	}
+}
